@@ -2,9 +2,10 @@
 
 ## 使用步骤
 ```js
-node install.js
+node install.js 
+
 ```
-### 配置说明:
+### 配置说明
 
 默认配置(https://github.com/MicrosoftArchive/redis/releases) 下的默认配置 + 以下配置
 
