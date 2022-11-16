@@ -2,7 +2,7 @@
 
 ## 使用步骤
 ```js
-node install.js 
+node install.js
 
 ```
 ### 配置说明
