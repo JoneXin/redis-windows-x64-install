@@ -3,12 +3,14 @@
 
 ## 使用步骤
 
-1, 配置安装位置：/package/install_config.json
+1, 配置安装信息：/package/install_config.json
 
 ```json
 {
-    "taget_path": "D:/hzleaper_auto_install/redis"
+    "taget_path": "D:/hzleaper_auto_install/redis",
+    "log_file": "D:/hzleaper_auto_install/redis/redis_server.log"
 }
+
 ```
 
 2, 执行脚本
@@ -28,17 +30,21 @@ requirepass root //密码 root
 appendonly yes // 开启 AOF 持久化策略
 appendfilename "appendonly.aof" //存储文件名（默认的）
 appendfsync everysec // 每秒持久化到磁盘（默认的）
+logfile "D:/hzleaper_auto_install/redis/redis_server.log" // 日志输出位置
 ```
 
 ### 目录
 
 ```text
-redis_install_package
+redis-windows-x64-install
  ├─ pakcage
+ │ ├─ redis
+ │ ├─ test
+ │ │ └─ func.js
  │ ├─ index.js // 入口
- │ ├─ install_config.json // 配置安装位置
+ │ ├─ install_config.json // 配置安装信息文件
  │ ├─ package.json
- │ └─ redis.zip // redis 压缩包
+ │ └─ redis.windows_template.conf
  └─ install.js
 
 ```
