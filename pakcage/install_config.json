@@ -1,3 +1,4 @@
 {
-    "taget_path": "D:/hzleaper_auto_install/redis"
+    "taget_path": "D:/hzleaper_auto_install/redis",
+    "log_file": "D:/hzleaper_auto_install/redis/redis_server.log"
 }
